@@ -1,0 +1,11 @@
+/*
+
+*/
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2cm;
+}
+body{
+    /* ปรับให้รูปพื้นหลังในหน้าเว็บไม่แบ่ง ให้เป็นรูปเดดียว */
+    background-size: cover;
+}
