@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+<!-- localhost/SE_CAMP/index.php -->
 <?php $multi_x = 2; ?>
     <h1>ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
 
