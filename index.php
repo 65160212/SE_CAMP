@@ -19,6 +19,8 @@
                 <tbody >
                 <tr>
                 <h1>ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
+                <div>
+                </div>
                 <?php
                     $b = 7;
                     for( $i = 1 ; $i <= 24 ; $i++ ) {
@@ -35,11 +37,6 @@
             width: 1500px;
             height: 265px;
         }
-        .b{
-            /* background-image: url('C:..\xampp\htdocs\SE_CAMP\images\jell55556.jpg'); */
-            
-        }
-
     </style>
 </body>
 </html>
