@@ -1,19 +1,24 @@
 h1{
     color: rgb(0, 0, 0);
     font-size: 50px;
+    font-family: Sriracha;
 }
 div {
     font-size: 25px;
-    background-color: rgb(165, 213, 255);
+    background-color: rgb(255, 213, 150);
     width: 220px;
     height: 380px;
     border: 1px solid black;
     overflow: scroll;
+    font-family: Sriracha;
 }
-div {
-
+div:hover {
+    width: 240px;
+    height: 400px;
+    background-color: rgb(255, 182, 113);
+    box-shadow: 10px 5px black;
 }
 body {
-    background-image: url("https://i.pinimg.com/564x/f4/61/ad/f461ad331c491b46d69243f75a98a415.jpg");
+    background-image: url("https://i.pinimg.com/originals/8c/62/93/8c6293f2ccb3b36222301e5da06f6f60.gif");
     background-size: cover;
 }
