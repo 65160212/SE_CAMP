@@ -13,20 +13,24 @@
 <!-- localhost/SE_CAMP/index.php -->
 <?php $multi_x = 7; ?>
 
-    <center>
-        <table>
-             <tbody >
-                <tr>
-                    <h1>ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
-                    <div class="box">1</div>                            <?php
-                    $b = 7;
-                    for( $i = 1 ; $i <= 24 ; $i++ ) {                        echo "{$b} x {$i} = ".($b * $i)."<br/>";
-                    }
-                    ?>
-                </tr>
-            </tbody>
-        </table>
-    </center>
+    <form>
+        <center>
+            <table>
+                 <tbody >
+                    <tr>
+                        <h1>ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
+                                                    
+                        <?php
+                        $b = 7;
+                        for($i = 1 ; $i <= 24 ; $i++ ) {                        
+                            echo "{$b} x {$i} = ".($b * $i)."<br/>";
+                        }
+                        ?>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+    </form>
     <style>
         table {
             width: 1500px;
@@ -35,4 +39,3 @@
     </style>
 </body>
 </html>
-
