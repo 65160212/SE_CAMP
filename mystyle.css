@@ -1,8 +1,19 @@
 h1{
-    color: crimson;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
 }
-.box{
-    background-color: aqua;
-    width: 400px;
-    height: 400px;
+div {
+    font-size: 25px;
+    background-color: rgb(165, 213, 255);
+    width: 220px;
+    height: 380px;
+    border: 1px solid black;
+    overflow: scroll;
+}
+div {
+
+}
+body {
+    background-image: url("https://i.pinimg.com/564x/f4/61/ad/f461ad331c491b46d69243f75a98a415.jpg");
+    background-size: cover;
 }

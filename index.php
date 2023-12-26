@@ -18,24 +18,19 @@
             <table>
                  <tbody >
                     <tr>
-                        <h1>ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
-                                                    
-                        <?php
-                        $b = 7;
-                        for($i = 1 ; $i <= 24 ; $i++ ) {                        
-                            echo "{$b} x {$i} = ".($b * $i)."<br/>";
-                        }
-                        ?>
+                        <h1>ตารางสูตรคูณแม่  <?php echo $multi_x ?></h1>
+                        <div>
+                            <?php
+                            $b = 7;
+                            for($i = 1 ; $i <= 24 ; $i++ ) {                        
+                                echo "{$b} x {$i} = ".($b * $i)."<br/>";
+                            }
+                            ?>
+                        </div>                            
                     </tr>
                 </tbody>
             </table>
         </center>
     </form>
-    <style>
-        table {
-            width: 1500px;
-            height: 265px;
-        }
-    </style>
 </body>
 </html>
