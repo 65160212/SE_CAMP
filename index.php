@@ -11,25 +11,20 @@
 </head>
 <body>
 <!-- localhost/SE_CAMP/index.php -->
-<?php $multi_x = 2; ?>
+<?php $multi_x = 7; ?>
 
     <center>
         <table>
-            <div class="b">
-                <tbody >
+             <tbody >
                 <tr>
-                <h1>ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
-                <div>
-                </div>
-                <?php
+                    <h1>ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
+                    <div class="box">1</div>                            <?php
                     $b = 7;
-                    for( $i = 1 ; $i <= 24 ; $i++ ) {
-                    echo "{$b} x {$i} = ".($b * $i)."<br/>";
+                    for( $i = 1 ; $i <= 24 ; $i++ ) {                        echo "{$b} x {$i} = ".($b * $i)."<br/>";
                     }
-                ?>
+                    ?>
                 </tr>
-                </tbody>
-            </div>
+            </tbody>
         </table>
     </center>
     <style>
