@@ -1,23 +1,50 @@
 <?php
-use App\Http\Controllers\MyControllers;
+
+use App\Http\Controllers\MyController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-Route::get('/my-controllers', [MyControllers::class, 'index']);
-Route::get('/my-controllers2','App\Http\Controllers\MyControllers@index');
-Route::resource('/my-controllers4',MyControllers::class);
+use App\Http\Controllers\C_titles;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+Route::get('/my-controller', [MyController::class, 'index']);
+
+// Route::get('/my-controller2', 'App\Http\Controllers\MyController@index');
+// Route::namespace('App\Http\Controllers')->group(function(){
+//     Route::get('/my-controller3', 'MyController@index');
+//     Route::post('/my-controller3-post', 'MyController@store');
+// });
+
+// Route::resource('/my-controller4', MyController::class);
+
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); // welcome.blade.php
 });
 
-Route::get('/my-route', function () {
-    $data = ['var_a' => 'Hello World'];
-    $data['var_b'] ="Laraval";
+// use Illuminate\Http\Request;
+
+Route::get('/my-route', function(){
+    // return view('myroute');
+    //        Key    =>  Value
+    $data = ['val_a' => 'Hello World!'];
+    $data['val_b'] = "Laravel";
     return view('myfolder.mypage',$data);
 });
-use Illuminate\Http\Request;
 
-Route::post('/my-route', function (Request $request) {
-    $data['multiplier'] = $request->input('multiplier');
+
+Route::post('/my-route', function(Request $req){
+    $data['myinput'] =  $req->input('myinput');
     return view('myroute', $data);
 });
 
-Route::grt('/my-controller', [MyContrroller::class, 'index']);
+Route::resource('titles',C_titles::class);
