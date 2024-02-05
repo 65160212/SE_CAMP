@@ -16,8 +16,6 @@ use App\Http\Controllers\C_titles;
 |
 */
 
-Route::get('/my-controller', [MyController::class, 'index']);
-
 // Route::get('/my-controller2', 'App\Http\Controllers\MyController@index');
 // Route::namespace('App\Http\Controllers')->group(function(){
 //     Route::get('/my-controller3', 'MyController@index');
@@ -48,3 +46,7 @@ Route::post('/my-route', function(Request $req){
 });
 
 Route::resource('titles',C_titles::class);
+
+Route::get('/my-controller', [MyController::class, 'index']);
+
+Route::resource('titles', C_titles::class);
