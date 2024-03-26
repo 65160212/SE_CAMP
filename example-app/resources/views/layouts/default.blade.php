@@ -181,7 +181,7 @@
                             alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">{{ Auth::user()->name }}</a>
+                        <a href="#" class="d-block">Alexander Pierce</a>
                     </div>
                 </div>
 
@@ -228,11 +228,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                            <a href="/my-love" class="nav-link">
+                                <i class="fas fa-barcode"></i>
                                 <p>
-                                    Simple Link
-                                    <span class="right badge badge-danger">New</span>
+                                    Multiply for now
                                 </p>
                             </a>
                         </li>
